@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSMAP</title>
+
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <select class="form-control form-control-sm inp" id="map">
+      <option>mirage</option>
+      <option>dust2</option>
+      <option>office</option>
+    </select>
+    <!--input type="text" readonly class="form-control inp" id="result" value="mirage"/-->
+    <br>
+    <div id="sketch-holder"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-4 col-sm-offset-3 col-md-offset-4" id="cnta">
+            <div class="panel panel-default">
+                <!-- Default panel contents -->
+                <!-- List group #ddd -->
+                <ul class="list-group">
+                    <div class="panel-heading" id="heading">Player info</div>
+                    <li class="list-group-item">
+                        CT info
+                        <div class="material-switch pull-right">
+                            <input id="cthp" checked name="cthp" type="checkbox"/>
+                            <label for="cthp" class="label-primary"></label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        T info
+                        <div class="material-switch pull-right">
+                            <input id="thp" checked name="thp" type="checkbox"/>
+                            <label for="thp" class="label-primary"></label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Info square
+                        <div class="material-switch pull-right">
+                            <input id="sq" checked name="sq" type="checkbox"/>
+                            <label for="sq" class="label-primary"></label>
+                        </div>
+                    </li>
+                    <div class="panel-heading" id="heading">Radar</div>
+                    <li class="list-group-item">
+                        Rotating way
+                        <div class="material-switch pull-right">
+                            <input id="rw" checked name="rw" type="checkbox"/>
+                            <label for="rw" class="label-primary"></label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        2-Stick rotating way
+                        <div class="material-switch pull-right">
+                            <input id="2srw" checked name="2srw" type="checkbox"/>
+                            <label for="2srw" class="label-primary"></label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Flase position
+                        <div class="material-switch pull-right">
+                            <input id="fp" checked name="fp" type="checkbox"/>
+                            <label for="fp" class="label-primary"></label>
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        Trails
+                        <div class="material-switch pull-right">
+                            <input id="tr" unchecked name="tr" type="checkbox"/>
+                            <label for="tr" class="label-primary"></label>
+
+                        </div>
+                    </li>
+                    <li class="list-group-item">
+                        <input type="text" class="form-control inp" id="pos" placeholder="Trails length" value=""/>
+                    </li>
+
+                    <div class="panel-heading" id="heading">Other</div>
+                    <li class="list-group-item">
+                        <input type="text"  class="form-control inp" id="pos" value="0 0"/>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <!--button type="button" class="btn btn-success inp">Get position</button-->
+    <br>
+
+</body>
+<script src="lib/socket.io.js"></script>
+<script type="text/javascript" src="lib/p5.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<!--script type="text/javascript" src="lib/bootstrap.js"></script-->
+<!--li class="list-group-item">
+    Bootstrap Switch Danger
+    <div class="material-switch pull-right">
+        <input id="someSwitchOptionDanger" name="someSwitchOption001" type="checkbox"/>
+        <label for="someSwitchOptionDanger" class="label-danger"></label>
+    </div>
+    <li class="list-group-item">
+        T hp
+        <div class="material-switch pull-right">
+            <input id="someSwitchOptionPrimary" name="someSwitchOption001" type="checkbox"/>
+            <label for="someSwitchOptionPrimary" class="label-primary"></label>
+        </div>
+    </li>
+    <li class="list-group-item">
+        CT hp
+        <div class="material-switch pull-right">
+            <input id="someSwitchOptionSuccess" name="someSwitchOption001" type="checkbox"/>
+            <label for="someSwitchOptionSuccess" class="label-success"></label>
+        </div>
+    </li>
+    <li class="list-group-item">
+        Dead players
+        <div class="material-switch pull-right">
+            <input id="someSwitchOptionWarning" name="someSwitchOption001" type="checkbox"/>
+            <label for="someSwitchOptionWarning" class="label-warning"></label>
+        </div>
+    </li>
+</li!-->
+</html>
