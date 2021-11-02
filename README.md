@@ -1,1 +1,3 @@
 # csmap
+
+cs:go wh
